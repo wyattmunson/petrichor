@@ -1,15 +1,15 @@
-name: <+pipeline.variables.serviceName>
-replicas: 1
+# name: <+pipeline.variables.serviceName>
+# replicas: 1
 
-image: <+artifact.image>
-imagePolice: Always
+# image: <+artifact.image>
+# imagePolice: Always
 
-namespace: <+infra.namespace>
+# namespace: <+infra.namespace>
 
-serviceType: ClusterIP
+# serviceType: ClusterIP
 
-servicePort: 80
-serviceTargetPort: 80
+# servicePort: 80
+# serviceTargetPort: 80
 # env:
 #   config:
 #     STABLE_ENDPOINT: ${serviceVariable.stableEndpoint}
