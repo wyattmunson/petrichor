@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: <IMAGE_NAME_AND_TAG>
+          image: <+input.tag>
           imagePullPolicy: Always
           resources:
             requests:
