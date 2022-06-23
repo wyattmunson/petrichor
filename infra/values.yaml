@@ -1,3 +1,4 @@
+namespace: <+infra.namespace>
 # name: <+pipeline.variables.serviceName>
 # replicas: 1
 
