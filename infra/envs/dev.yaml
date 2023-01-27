@@ -1,16 +1,19 @@
-name: <+pipeline.variables.serviceName>-<+env.name>
+# name: <+pipeline.variables.serviceName>-<+env.name>
+name: docker-express-service
 replicas: 1
 
-virtualPath: <+pipeline.variables.serviceName>
+# virtualPath: <+pipeline.variables.serviceName>
 
-image: <+artifact.image>
+# image: <+artifact.image>
 imagePolicy: Always
 dockercfg: <+artifact.imagePullSecret>
 
-environment: <+env.name>
+# environment: <+env.name>
+environment: dev 
 
 createNamespace: true
-namespace: <+infra.namespace>
+# namespace: <+infra.namespace>
+namespace: dev
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
