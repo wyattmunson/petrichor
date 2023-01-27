@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: munsonwf/express-docker
+          image: munsonwf/express-docker:c465c1f
           imagePullPolicy: Always
           resources:
             requests:
