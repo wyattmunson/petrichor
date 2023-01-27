@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: payment-service
-  namespace: {{.Values.namespace}}
+  namespace: dev
 spec:
-  replicas: {{int .Values.replicas}}
+  replicas: 1
   selector:
     matchLabels:
       app: payment-service
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: {{.Values.image}}
+          image: munsonwf/express-docker
           imagePullPolicy: Always
           resources:
             requests:
